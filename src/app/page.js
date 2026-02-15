@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <div style={{width: "100vw",position: 'relative',height:'90vh'}}><Image src="/top.jpg"alt=""fill style={{ objectFit: "cover"}}/></div>
+        <div style={{width:"100vw",position:"relative",height:"clamp(50vh,70vh,90vh)"}}><Image src="/top.jpg"alt=""fill style={{ objectFit:"cover"}}priority/></div>
         <h1 style={{alignSelf:'center',textAlign:'center',fontSize:'3em'}}>Champool</h1>
         <section style={{alignSelf:'center',textAlign:'center'}}>
           <h1 style={{fontSize:'3em'}}>Que Quieres?</h1>
