@@ -8,6 +8,7 @@ export default function Home() {
       <main className={styles.main}>
         <div style={{width:"100vw",position:"relative",height:"clamp(50vh,70vh,90vh)"}}><Image src="/top.jpg"alt=""fill style={{ objectFit:"cover"}}priority/></div>
         <h1 style={{alignSelf:'center',textAlign:'center',fontSize:'3em'}}>Champool</h1>
+        <Link href="https://www.facebook.com/profile.php?id=100078679338122&locale=es_LA"><h1>Síguenos en Facebook</h1></Link>
         <section style={{alignSelf:'center',textAlign:'center'}}>
           <h1 style={{fontSize:'3em'}}>Que Quieres?</h1>
           <div style={{display:'flex'}}>
