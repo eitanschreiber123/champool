@@ -1,65 +1,56 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.js file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+        <div style={{width: "100vw",position: 'relative',height:'90vh'}}><Image src="/top.jpg"alt=""fill style={{ objectFit: "cover"}}/></div>
+        <h1 style={{alignSelf:'center',textAlign:'center',fontSize:'3em'}}>Champool</h1>
+        <section style={{alignSelf:'center',textAlign:'center'}}>
+          <h1 style={{fontSize:'3em'}}>Que Quieres?</h1>
+          <div style={{display:'flex'}}>
+            <Link className={styles.link} href="/buy">Comprar</Link>
+            <Link className={styles.link} href="/fix">Arreglar</Link>
+          </div>
+        </section>
+        <section className={styles.responsiveGrid}>
+  <div className={styles.imageContainer}>
+    <Image src="/promo/ad.jpeg" alt="" fill className={styles.image} />
+  </div>
+
+  <div className={styles.imageContainer}>
+    <Image src="/promo/hold_card.jpeg" alt="" fill className={styles.image} />
+  </div>
+
+  <div className={styles.imageContainer}>
+    <Image src="/promo/screenshot.jpeg" alt="" fill className={styles.image} />
+  </div>
+
+  <div className={styles.imageContainer}>
+    <Image src="/promo/side_card.jpeg" alt="" fill className={styles.image} />
+  </div>
+
+  <div className={styles.imageContainer}>
+    <Image src="/promo/sticker.jpeg" alt="" fill className={styles.image} />
+  </div>
+
+  <div className={styles.imageContainer}>
+    <Image src="/promo/store_front.jpeg" alt="" fill className={styles.image} />
+  </div>
+<div style={{display:'flex',justifyContent:'center',alignItems:'center'}}><video width="320" controls preload="none"><source src="/promo/promo_video.mp4" type="video/mp4" /></video></div>
+<div style={{display:'flex',justifyContent:'center',alignItems:'center'}}><video width="320" controls preload="none"><source src="/promo/promo_video_2.mp4" type="video/mp4" /></video></div>
+<div style={{display:'flex',justifyContent:'center',alignItems:'center'}}><video width="320" controls preload="none"><source src="/promo/promo_video_3.mp4" type="video/mp4" /></video></div>
+</section>
+
+        <section style={{alignSelf:'center',textAlign:'center'}}>
+          <h1 style={{fontSize:'3em'}}>Que Quieres?</h1>
+          <div style={{display:'flex'}}>
+            <Link className={styles.link} href="/buy">Comprar</Link>
+            <Link className={styles.link} href="/fix">Arreglar</Link>
+          </div>
+        </section>
       </main>
     </div>
   );
