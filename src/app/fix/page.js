@@ -12,12 +12,12 @@ export default function Home() {
         <div style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
           <h1>Computaora</h1>
           <Image src={`/computer/4.jpeg`}alt=""width={400}height={400}/>
-          <Link href="https://wa.me/593961356570?text=Hola%20,me%20puede%20arreglar%20mi%20computadora!" style={{backgroundColor:'blue',padding:'2px 19px',color:'white',borderRadius:'10px',margin:'10px'}}>Compra</Link>
+          <Link href="https://wa.me/593961356570?text=Hola%20,me%20puede%20arreglar%20mi%20computadora!" style={{backgroundColor:'blue',padding:'2px 19px',color:'white',borderRadius:'10px',margin:'10px'}}>Contacto</Link>
         </div>
         <div style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
           <h1>Monitor</h1>
           <Image src={`/monitor/so_many_monitors.jpeg`}alt=""width={400}height={400}/>
-          <Link href="https://wa.me/593961356570?text=Hola%20,me%20puede%20arreglar%20mi%20monitor!" style={{backgroundColor:'blue',padding:'2px 19px',color:'white',borderRadius:'10px',margin:'10px'}}>Compra</Link>
+          <Link href="https://wa.me/593961356570?text=Hola%20,me%20puede%20arreglar%20mi%20monitor!" style={{backgroundColor:'blue',padding:'2px 19px',color:'white',borderRadius:'10px',margin:'10px'}}>Contacto</Link>
         </div>
         </section>
       </main>
