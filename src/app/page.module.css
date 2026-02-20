@@ -71,3 +71,11 @@
 .image {
   object-fit: cover;
 }
+.social {
+  flex-direction:row;
+}
+@media (max-width: 650px) {
+  .social {
+  flex-direction:column;
+}
+}
